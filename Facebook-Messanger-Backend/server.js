@@ -13,18 +13,13 @@ const port = process.env.PORT || 8000;
     app.use(cors());
 
     const pusher = new Pusher({
-        appId: "1275439",
-        key: "ee7a40a30c8c02570180",
-        secret: "eec4e730291e6c6eeea0",
-        cluster: "ap2",
-        useTLS: true
+        //  ADD Your Pusher Config Here
       });
       
 
 // Db Config
-// QCFgH3EXNgZglrwh
 
-const mongoURI =`mongodb+srv://admin:QCFgH3EXNgZglrwh@cluster0.hdtuy.mongodb.net/messages?retryWrites=true&w=majority`
+const mongoURI =`Add MogoDb Database Connection Url`
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
